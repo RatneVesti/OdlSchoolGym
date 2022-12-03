@@ -1,0 +1,186 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+ margin: 0;
+ padding: 0;
+}
+
+.navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background: rgb(34, 34, 34);
+ color: white;
+}
+
+.brand-title {
+ font-size: 1.5rem;
+ margin: .5rem;
+}
+
+.navbar-links ul {
+ margin: 0;
+ padding: 0;
+ display: flex;
+}
+
+.navbar-links li {
+ list-style: none;
+}
+
+.navbar-links li a {
+ text-decoration: none;
+ color: white;
+ padding: 1rem;
+ display: block;
+}
+
+.navbar-links li:hover {
+ background-color: rgb(196, 4, 4);
+}
+
+.toggle-button {
+ position: absolute;
+ top: .75rem;
+ right: 1rem;
+ display: none;
+ flex-direction: column;
+ justify-content: space-between;
+ width: 30px;
+ height: 21px;
+}
+
+/* TRI CRTICE */
+.toggle-button .bar {
+ height: 3px;
+ width: 100%;
+ background-color: white;
+ border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+ .toggle-button {
+  display: flex;
+ }
+
+ .navbar-links {
+  display: none;
+  width: 100%;
+ }
+
+
+ .navbar {
+  flex-direction: column;
+  align-items: flex-start;
+ }
+
+ .navbar-links ul {
+  width: 100%;
+  flex-direction: column;
+ }
+
+ .navbar-links li {
+  text-align: center;
+ }
+
+ .navbar-links li a {
+  padding: .5rem 1rem;
+ }
+
+ .navbar-links.active {
+  display: flex;
+ }
+
+
+
+
+
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+}
+
+html {
+ font-family: Arial, Helvetica, sans-serif;
+ background: url(./pozadina.jpeg) no-repeat center fixed;
+ background-size: cover;
+}
+
+.logo {
+ vertical-align: middle;
+ border: 0;
+ max-width: 100%;
+ height: auto;
+ text-align: center;
+ padding: 5px;
+}
+
+
+
+
+/* kontakt */
+.kontakt {
+ background-color: white;
+ color: black;
+ border-radius: 15px;
+ /* padding: 10px; */
+ display: block;
+ width: 250px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+a:link {
+ color: #349ecb;
+}
+
+a:visited {
+ color: green;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+
+a:active {
+ color: blue;
+}
+
+
+.zoom {
+ transform: 0.2s;
+}
+
+
+
+
+/* zum loga  */
+.zoom:hover {
+ transform: scale(2.0);
+}
+
+
+/* tepih servis */
+.one {
+ color: black;
+}
+
+
+.galerija {
+ color: black;
+ text-align: center;
+
+}
+
+
+.slike {
+ text-align: center;
+
+}
